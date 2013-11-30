@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>xmlbg_ar.qm</file>
+        <file>xmlbg48.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,14 @@
+
+[Desktop Entry]
+Type=Application
+Name=xmlbg
+Name[ar]=خلفيات جنوم
+
+Comment[ar]=مغير خلفيات سطح مكتب جنوم
+
+Exec=xmlbg
+Icon=xmlbg
+Categories=Settings;
+
+
+

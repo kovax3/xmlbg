@@ -1,0 +1,48 @@
+
+#****************************************************************************
+#**
+#** Copyright AbouZakaria.
+#** All rights reserved.
+#** Contact: AbouZakaria (yahia67@live.com)
+#**
+#** $xmlbg_BEGIN_LICENSE:GPL$
+#** GNU General Public License Usage
+#** Alternatively, this file may be used under the terms of the GNU
+#** General Public License version 3.0 as published by the Free Software
+#** Foundation and appearing in the file LICENSE.GPL included in the
+#** packaging of this file.  Please review the following information to
+#** ensure the GNU General Public License version 3.0 requirements will be
+#** met: http://www.gnu.org/copyleft/gpl.html.
+#**
+#** If you have questions regarding the use of this file, please contact
+#** AbouZakaria (yahia67@live.com)
+#** $xml_END_LICENSE$
+#**
+#***************************************************************************
+
+TARGET = xmlbg
+TEMPLATE = app
+CONFIG += qt \
+    release
+SOURCES += main.cpp \
+    mainwindow.cpp \
+    dialogedit.cpp
+HEADERS += mainwindow.h \
+    dialogedit.h
+FORMS += mainwindow.ui \
+    dialogedit.ui
+RESOURCES += img.qrc
+TRANSLATIONS = xmlbg_en.ts \
+                xmlbg_ar.ts
+CODECFORTR = UTF-8
+# install
+ applications.path = /usr/share/applications
+ applications.files =xmlbg.desktop
+
+icon.path = /usr/share/icons/hicolor/scalable/apps
+icon.files =xmlbg.png
+
+target.path = /usr/bin
+INSTALLS += applications \
+        icon \
+        target
